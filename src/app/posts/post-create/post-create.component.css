@@ -1,0 +1,14 @@
+.main-card{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+#input{
+    width: 100%;
+}
+input textarea{
+    width: 100%;
+}
+#btn{
+    float: right;
+}
+  

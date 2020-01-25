@@ -1,0 +1,15 @@
+<p align="center"><b>Your tasks!</b></p>
+<mat-card id="display-panel">
+  <mat-accordion multi="true" *ngIf="posts.length > 0" > <!--multi allows to open more then 1 accordion-->
+    <mat-expansion-panel *ngFor="let post of posts; let i=index">
+      <mat-expansion-panel-header>
+        <p><b>{{post.title}}</b></p>
+    </mat-expansion-panel-header>
+    <hr>
+    <p>{{post.content}}</p>  
+    <p style="float: right;" id="trash-icon"><i (click)="posts.splice(i, 1)" class="fa fa-trash-o" style="font-size: 30px; color: slateblue;"></i></p>
+  </mat-expansion-panel>
+  </mat-accordion>
+
+  <p class="infotext mat-body-1" *ngIf="posts.length<=0" id="empty-panel"><b>No tasks Added Yet!</b></p>
+</mat-card>

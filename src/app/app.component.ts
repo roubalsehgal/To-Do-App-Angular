@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'To-Do-App';
+  storedPosts=[];
+
+  onPostAdded(post: any){
+    this.storedPosts.push(post);
+  }
 }

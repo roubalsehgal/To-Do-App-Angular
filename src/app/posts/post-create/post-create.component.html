@@ -1,0 +1,18 @@
+<h2 align="center">To-Do App</h2>
+
+<mat-card class="main-card">
+  <mat-form-field id="input">
+    <input matInput placeholder="enter your task..." type="text" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+  <br>
+  <mat-form-field id="input">
+    <textarea matInput placeholder="enter details here.." rows="6" [(ngModel)]="enteredContent"></textarea>
+  </mat-form-field>
+  <br>
+  <button
+    mat-raised-button
+    color="accent"
+    (click)="onAddPost()"
+    id="btn">Save Post</button>
+    <br><br>
+</mat-card>
